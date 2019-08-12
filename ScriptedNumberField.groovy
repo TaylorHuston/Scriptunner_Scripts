@@ -5,7 +5,6 @@ import com.atlassian.jira.component.ComponentAccessor
 import com.atlassian.jira.ComponentManager
 import com.atlassian.jira.issue.CustomFieldManager
 import com.atlassian.jira.issue.fields.CustomField
-import com.atlassian.jira.issue.IssueManager
 import com.atlassian.jira.issue.Issue
 
 import org.apache.log4j.Logger
