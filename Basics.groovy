@@ -83,6 +83,6 @@ log.setLevel(Level.DEBUG)
 def changeHistoryManager = ComponentAccessor.getChangeHistoryManager();
 def changeItems = changeHistoryManager.getChangeItemsForField(issue, "status");
 
-changeItems.each() {ChangeItemBean item ->
+changeItems.each {ChangeItemBean item ->
     log.debug(item);                  
 }
