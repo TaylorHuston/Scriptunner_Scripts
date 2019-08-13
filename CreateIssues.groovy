@@ -17,12 +17,11 @@ issueInputParameters
  .setReporterId(issue.reporterId)
  .setAssigneeId(issue.assigneeId);
 
-ApplicationUser user = ComponentAccessor.getJiraAuthenticationContext().getLoggedInUser()
+ApplicationUser user = ComponentAccessor.getJiraAuthenticationContext().getLoggedInUser();
 
 IssueService.CreateValidationResult createValidationResult = issueService.validateCreate(user, issueInputParameters); //Validates all the parameters
 
-if (createValidationResult.isValid())
-{
+if (createValidationResult.isValid()) {
  IssueService.IssueResult createResult = issueService.create(user, createValidationResult);
 }
 

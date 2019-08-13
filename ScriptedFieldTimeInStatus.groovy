@@ -6,12 +6,12 @@ import com.atlassian.jira.issue.*
 import org.apache.log4j.Logger
 import org.apache.log4j.Level
 
-def log = Logger.getLogger("com.acme.CreateSubtask")
-log.setLevel(Level.DEBUG)
+def log = Logger.getLogger("com.acme.CreateSubtask");
+log.setLevel(Level.DEBUG);
 
 def changeHistoryManager = ComponentAccessor.getChangeHistoryManager();
 def changeItems = changeHistoryManager.getChangeItemsForField(issue, "status");
-def statusName = "Selected for Development"
+def statusName = "Selected for Development";
 
 def total = 0;
 
