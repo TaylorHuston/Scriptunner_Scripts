@@ -86,3 +86,11 @@ def changeItems = changeHistoryManager.getChangeItemsForField(issue, "status");
 changeItems.each {ChangeItemBean item ->
     log.debug(item);                  
 }
+
+
+//How to access a field in a Behavious
+import com.atlassian.jira.component.ComponentAccessor
+import com.atlassian.jira.issue.CustomFieldManager
+import com.atlassian.jira.issue.fields.CustomField
+
+def optionList = getFieldById(getFieldChanged());  //getFieldChanged() always returns the field ID of the field the behaviour fires for
