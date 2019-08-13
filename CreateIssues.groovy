@@ -25,3 +25,4 @@ if (createValidationResult.isValid())
 {
  IssueService.IssueResult createResult = issueService.create(user, createValidationResult);
 }
+
